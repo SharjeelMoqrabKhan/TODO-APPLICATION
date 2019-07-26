@@ -42,3 +42,39 @@ body{
 .header p{
     font-size: 12px;
 }
+
+.todo-body{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.todo-body::-webkit-scrollbar{
+    background: transparent;
+    width: 1px;
+}
+
+.todo-list{
+    list-style: none;
+}
+
+.todo-list .todo-item{
+    padding: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    color: #717171;
+}
+
+.todo-item.checked{
+    text-decoration: line-through;
+}
+
+.todoInput{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+}
